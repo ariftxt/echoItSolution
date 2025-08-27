@@ -13,11 +13,10 @@ public class ItemController {
 
     @GetMapping(value = "get/all")
     public List<Item> getAll(){
-        List<Item> items = List.of(
+        return List.of(
                 new Item(1L, "water", "Bottle", true, 40L),
                 new Item(2L, "water", "jar", true, 110L),
                 new Item(3L, "water", "tanker", true, 1000L)
         );
-        return items;
     }
 }
