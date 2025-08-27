@@ -12,6 +12,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
@@ -56,6 +57,6 @@ public class Test {
     private Status status;
 
     @Column(name = "amount", precision = 15, scale = 2)
-    private Double amount;
+    private BigDecimal amount;
 
 }
