@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/securitydb
+    url: jdbc:postgresql://localhost:5433/securitydb
     username: postgres
-    password: DB@XYL100p
+    password: 1234
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -12,6 +12,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 logging:
